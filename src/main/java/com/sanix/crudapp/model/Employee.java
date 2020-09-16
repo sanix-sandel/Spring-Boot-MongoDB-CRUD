@@ -1,10 +1,14 @@
 package com.sanix.crudapp.model;
 
+
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
+
 import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.beans.Transient;
 
 @Document(collection="Employee")
 public class Employee {
